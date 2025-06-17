@@ -1,0 +1,32 @@
+
+body {
+    background: linear-gradient(120deg,  #a1c4fd 100%, #f0f4f8 0%,);
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;      /* Ajoute cette ligne */
+    justify-content: center;
+    align-items: center;     
+}
+
+#container {
+    background: #a1c4fd;
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #00008b;;(0,0,0,0.08);
+    min-width: 350px;
+    max-width: 500px;
+    width: 500%;
+    border-radius: 10px;
+    border: 10px solid #a1c4a1;
+
+footer {
+    text-align: center;
+    margin-top: 024px;
+    color: #555;
+    font-size: 0,90em;
+}
+#tasks > li{
+    margin-left: 50px;
+}
