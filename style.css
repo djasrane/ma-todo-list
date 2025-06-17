@@ -14,12 +14,13 @@ body {
     background: #a1c4fd;
     padding: 32px 24px;
     border-radius: 16px;
-    box-shadow: 0 4px 24px #00008b;;(0,0,0,0.08);
+    box-shadow: 0 4px 24px #00008b;
     min-width: 350px;
     max-width: 500px;
     width: 500%;
     border-radius: 10px;
     border: 10px solid #a1c4a1;
+}
 
 footer {
     text-align: center;
@@ -29,4 +30,15 @@ footer {
 }
 #tasks > li{
     margin-left: 50px;
+}
+.body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #001f3f; /* Arrière-plan bleu foncé */
+  color: #fff; /* Texte blanc pour contraste */
+  line-height: 1.6;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: rgb(117, 115, 115); /* Couleur grise pour les tâches terminées */
 }
