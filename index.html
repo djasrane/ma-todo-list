@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+ <div id="container">
+
+    <div id="header">
+        <h1>Gestionnaire de taches</h1>
+    </div>
+
+    <div>
+        <input type="text" class="inputField" id="imputField" placeholder="Ajouter une tache">
+        <button id="addButton">Ajouter</button>
+        
+    </div>
+            <h2>Mes liste de taches</h2>
+
+        <hr />
+
+        <div class="filters">
+            <span class="filter active" id="All">Toutes <span id="allcounter"> 10</span></span>
+            <span id="all">En attentes <span id="pendingCounter"> 5</span></span>
+            <span id="Completed">Terminer <span id="allcounter"> 1</span></span>
+        </div>
+
+        <button class="clearBtn">Supprimer Toutes</button>
+
+        <hr />
+    
+    <ul id="tasks"> 
+
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Appeller Papa</span>
+            </label>
+            <span class="editeBtn"><i class="fa-solid fa-pen-to-square"></i></span>
+            <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
+
+        </li>
+
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Faire mon cours</span>
+            <label>
+            <span class="editeBtn"><i class="fa-solid fa-pen-to-square"></i></span>
+            <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Reviser mon cours</span>
+            </label>
+            <span class="editeBtn"><i class="fa-solid fa-pen-to-square"></i></span>
+            <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
+            </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Finaliser mon travail sur db</span>
+            </label>
+            <span class="editeBtn"><i class="fa-solid fa-pen-to-square"></i></span>
+            <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
+        </li>    
+    </ul>
+ </div>
+ <footer>Copyrither &copy;/ Djasrane Tolba Succes</footer>
+ <script src="script.js"></script>
+</body>
+</html>
