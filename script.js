@@ -1,10 +1,11 @@
 let inputField = document.getElementById("inputField");
 let tasks = document.getElementById("tasks");
-console.log(tasks);
+//console.log(tasks);
 
 const addTask = () => {
     let task = inputField.value.trim()
     const li = document.createElement("li");
+    document.getElementById('inputField').value = "";
     li.innerHTML = `
      <label>
          <input type="checkbox">
@@ -26,13 +27,21 @@ const addTask = () => {
     //console.log(checkBox);
     checkBox.addEventListener("click", () => {
         span1.classList.toggle("checked");
+        counter();
     })
     editBtn.addEventListener("click", function () {
         const taskUpdate = prompt("Editer tâche:", span1.textContent);
-        if (taskUpdate !=null) {
-            span1.textContent = taskUpdate ;
+        if (taskUpdate != null) {
+            span1.textContent = taskUpdate;
             checkBox.checked = false;
             span1.classList.remove("checked");
         }
+        counter();
     })
 };
+
+const counter = () => {
+    let completedTask = document.querySelectorAll(".checked").length;
+    document.getElementById("ccompletedAllcounter").innerText = completedTask;
+}
+counter();

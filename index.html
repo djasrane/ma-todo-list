@@ -14,7 +14,7 @@
  <div id="container">
 
     <div id="header"> 
-        <h1>Gestionnaire de taches</h1>
+        <h1>Task Manager</h1>
     </div>
 
     <div>
@@ -22,17 +22,17 @@
         <button id="addButton" onclick="addTask()">Ajouter</button>
         
     </div>
-            <h2>Mes liste de taches</h2>
+            <h2>My to-do lists</h2>
 
         <hr />
 
         <div class="filters">
-            <span class="filter active" id="All">Toutes <span id="allcounter"> 10</span></span>
-            <span id="all">En attentes <span id="pendingCounter"> 5</span></span>
-            <span id="Completed">Terminer <span id="allcounter"> 1</span></span>
+            <span class="filter active" id="All">  Toutes<span id="allcounter"> 6</span></span>
+            <span id="all">En attentes <span id="pendingAllCounter"> 3</span></span>
+            <span id="Completed">Terminer <span id="ccompletedAllcounter"> 3</span></span>
         </div>
 
-        <button class="clearBtn">Supprimer Toutes</button>
+        <button class="clearBtn">Delete All</button>
 
         <hr />
     
@@ -41,18 +41,17 @@
         <li>
             <label>
                 <input type="checkbox">
-                <span>Appeller Papa</span>
+                <span class="checked">Appeller Papa</span>
             </label>
             <span class="editeBtn"><i class="fa-solid fa-pen-to-square"></i></span>
             <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
-
         </li>
 
         <li>
             <label>
                 <input type="checkbox">
                 <span>Faire mon cours</span>
-            <label>
+            </label>
             <span class="editeBtn"><i class="fa-solid fa-pen-to-square"></i></span>
             <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
         </li>
@@ -63,7 +62,16 @@
             </label>
             <span class="editeBtn"><i class="fa-solid fa-pen-to-square"></i></span>
             <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
-            </li>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span class="checked">Reviser mon cours</span>
+            </label>
+            <span class="editeBtn"><i class="fa-solid fa-pen-to-square"></i></span>
+            <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
+        </li>
+    
         <li>
             <label>
                 <input type="checkbox">
